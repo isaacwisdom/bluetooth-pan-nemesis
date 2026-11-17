@@ -6,9 +6,10 @@ type=application,service
 package-version=3.0.0
 short-desc=Connects the head unit through a phone's Bluetooth hotspot.
 detailed-desc=State-driven Bluetooth PAN connection control with live status and guarded recovery.
-os=NEEV23.USA.*.260507
+os=NEEV23.USA.*,OSNPE23.USA.*
 models=any
 depends=!iphone.bluetooth.pan
+postinstall=scripts/postinstall.sh
 preuninstall=scripts/preuninstall.sh
 
 [app.0]
